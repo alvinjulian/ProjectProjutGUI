@@ -41,7 +41,7 @@
             this.txtPengarang = new System.Windows.Forms.TextBox();
             this.txtEdisi = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.btnTammbahBuku = new System.Windows.Forms.Button();
+            this.btnTambahBuku = new System.Windows.Forms.Button();
             this.btnSimpan = new System.Windows.Forms.Button();
             this.btnBatal = new System.Windows.Forms.Button();
             this.btnFilter = new System.Windows.Forms.Button();
@@ -157,14 +157,14 @@
             this.label7.TabIndex = 12;
             this.label7.Text = "Edisi Buku : ";
             // 
-            // btnTammbahBuku
+            // btnTambahBuku
             // 
-            this.btnTammbahBuku.Location = new System.Drawing.Point(369, 43);
-            this.btnTammbahBuku.Name = "btnTammbahBuku";
-            this.btnTammbahBuku.Size = new System.Drawing.Size(75, 46);
-            this.btnTammbahBuku.TabIndex = 13;
-            this.btnTammbahBuku.Text = "Tambah Buku";
-            this.btnTammbahBuku.UseVisualStyleBackColor = true;
+            this.btnTambahBuku.Location = new System.Drawing.Point(369, 43);
+            this.btnTambahBuku.Name = "btnTambahBuku";
+            this.btnTambahBuku.Size = new System.Drawing.Size(75, 46);
+            this.btnTambahBuku.TabIndex = 13;
+            this.btnTambahBuku.Text = "Tambah Buku";
+            this.btnTambahBuku.UseVisualStyleBackColor = true;
             // 
             // btnSimpan
             // 
@@ -211,7 +211,7 @@
             this.Controls.Add(this.btnFilter);
             this.Controls.Add(this.btnBatal);
             this.Controls.Add(this.btnSimpan);
-            this.Controls.Add(this.btnTammbahBuku);
+            this.Controls.Add(this.btnTambahBuku);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtEdisi);
             this.Controls.Add(this.txtPengarang);
@@ -227,6 +227,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Frm_MenuBuku";
             this.Text = "Menu Buku";
+            this.Load += new System.EventHandler(this.Frm_MenuBuku_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -248,7 +249,7 @@
         private System.Windows.Forms.TextBox txtPengarang;
         private System.Windows.Forms.TextBox txtEdisi;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button btnTammbahBuku;
+        private System.Windows.Forms.Button btnTambahBuku;
         private System.Windows.Forms.Button btnSimpan;
         private System.Windows.Forms.Button btnBatal;
         private System.Windows.Forms.Button btnFilter;

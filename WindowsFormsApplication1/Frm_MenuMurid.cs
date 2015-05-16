@@ -16,5 +16,10 @@ namespace WindowsFormsApplication1
         {
             InitializeComponent();
         }
+
+        private void Frm_MenuMurid_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
