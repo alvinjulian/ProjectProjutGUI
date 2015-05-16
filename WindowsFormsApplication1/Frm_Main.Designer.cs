@@ -35,13 +35,9 @@
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.muridToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bukuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.peminjamanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dataMuridToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dataMuridLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dataMuridPToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tambahEntryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.dataBukuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bukuYangDipinjamToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.peminjamanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pinjamToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.overdueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tagihBukuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -79,20 +75,16 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // muridToolStripMenuItem
             // 
-            this.muridToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.dataMuridToolStripMenuItem,
-            this.dataMuridLToolStripMenuItem,
-            this.dataMuridPToolStripMenuItem,
-            this.tambahEntryToolStripMenuItem});
             this.muridToolStripMenuItem.Name = "muridToolStripMenuItem";
             this.muridToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
             this.muridToolStripMenuItem.Text = "&Murid";
+            this.muridToolStripMenuItem.Click += new System.EventHandler(this.muridToolStripMenuItem_Click);
             // 
             // bukuToolStripMenuItem
             // 
@@ -102,41 +94,6 @@
             this.bukuToolStripMenuItem.Name = "bukuToolStripMenuItem";
             this.bukuToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
             this.bukuToolStripMenuItem.Text = "&Buku";
-            // 
-            // peminjamanToolStripMenuItem
-            // 
-            this.peminjamanToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.pinjamToolStripMenuItem,
-            this.overdueToolStripMenuItem,
-            this.tagihBukuToolStripMenuItem,
-            this.kembaliToolStripMenuItem});
-            this.peminjamanToolStripMenuItem.Name = "peminjamanToolStripMenuItem";
-            this.peminjamanToolStripMenuItem.Size = new System.Drawing.Size(86, 20);
-            this.peminjamanToolStripMenuItem.Text = "&Peminjaman";
-            // 
-            // dataMuridToolStripMenuItem
-            // 
-            this.dataMuridToolStripMenuItem.Name = "dataMuridToolStripMenuItem";
-            this.dataMuridToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.dataMuridToolStripMenuItem.Text = "Data Murid";
-            // 
-            // dataMuridLToolStripMenuItem
-            // 
-            this.dataMuridLToolStripMenuItem.Name = "dataMuridLToolStripMenuItem";
-            this.dataMuridLToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.dataMuridLToolStripMenuItem.Text = "Data Murid (L)";
-            // 
-            // dataMuridPToolStripMenuItem
-            // 
-            this.dataMuridPToolStripMenuItem.Name = "dataMuridPToolStripMenuItem";
-            this.dataMuridPToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.dataMuridPToolStripMenuItem.Text = "Data Murid (P)";
-            // 
-            // tambahEntryToolStripMenuItem
-            // 
-            this.tambahEntryToolStripMenuItem.Name = "tambahEntryToolStripMenuItem";
-            this.tambahEntryToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.tambahEntryToolStripMenuItem.Text = "Tambah Entry";
             // 
             // dataBukuToolStripMenuItem
             // 
@@ -150,28 +107,39 @@
             this.bukuYangDipinjamToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.bukuYangDipinjamToolStripMenuItem.Text = "Buku yang dipinjam";
             // 
+            // peminjamanToolStripMenuItem
+            // 
+            this.peminjamanToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.pinjamToolStripMenuItem,
+            this.overdueToolStripMenuItem,
+            this.tagihBukuToolStripMenuItem,
+            this.kembaliToolStripMenuItem});
+            this.peminjamanToolStripMenuItem.Name = "peminjamanToolStripMenuItem";
+            this.peminjamanToolStripMenuItem.Size = new System.Drawing.Size(86, 20);
+            this.peminjamanToolStripMenuItem.Text = "&Peminjaman";
+            // 
             // pinjamToolStripMenuItem
             // 
             this.pinjamToolStripMenuItem.Name = "pinjamToolStripMenuItem";
-            this.pinjamToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.pinjamToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.pinjamToolStripMenuItem.Text = "Pinjam";
             // 
             // overdueToolStripMenuItem
             // 
             this.overdueToolStripMenuItem.Name = "overdueToolStripMenuItem";
-            this.overdueToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.overdueToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.overdueToolStripMenuItem.Text = "Overdue";
             // 
             // tagihBukuToolStripMenuItem
             // 
             this.tagihBukuToolStripMenuItem.Name = "tagihBukuToolStripMenuItem";
-            this.tagihBukuToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.tagihBukuToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.tagihBukuToolStripMenuItem.Text = "Tagih Buku";
             // 
             // kembaliToolStripMenuItem
             // 
             this.kembaliToolStripMenuItem.Name = "kembaliToolStripMenuItem";
-            this.kembaliToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.kembaliToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.kembaliToolStripMenuItem.Text = "Kembali";
             // 
             // Frm_Main
@@ -201,10 +169,6 @@
         private System.Windows.Forms.ToolStripMenuItem fileToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem muridToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem dataMuridToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem dataMuridLToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem dataMuridPToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem tambahEntryToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bukuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem dataBukuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bukuYangDipinjamToolStripMenuItem;

@@ -80,6 +80,15 @@
     <EmbeddedResource Include="Frm_Main.resx">
       <DependentUpon>Frm_Main.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Frm_MenuBuku.resx">
+      <DependentUpon>Frm_MenuBuku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_MenuMurid.resx">
+      <DependentUpon>Frm_MenuMurid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frm_TambahMurid.resx">
+      <DependentUpon>Frm_TambahMurid.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

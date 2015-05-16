@@ -18,14 +18,16 @@ namespace WindowsFormsApplication1
         public Frm_Main()
         {
             InitializeComponent();
-            bool file = true;
-
-            
         }
 
         private void exitToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void muridToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var FrmBuku = new Frm_MenuBuku();
         }
     }
 }
