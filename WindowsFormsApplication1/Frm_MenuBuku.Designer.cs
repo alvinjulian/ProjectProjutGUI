@@ -64,8 +64,10 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(21, 224);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dataGridView1.Size = new System.Drawing.Size(592, 168);
             this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.SelectionChanged += new System.EventHandler(this.dataGridView1_SelectionChanged);
             // 
             // label2
             // 
@@ -165,6 +167,7 @@
             this.btnTambahBuku.TabIndex = 13;
             this.btnTambahBuku.Text = "Tambah Buku";
             this.btnTambahBuku.UseVisualStyleBackColor = true;
+            this.btnTambahBuku.Click += new System.EventHandler(this.btnTambahBuku_Click);
             // 
             // btnSimpan
             // 
@@ -174,6 +177,7 @@
             this.btnSimpan.TabIndex = 14;
             this.btnSimpan.Text = "Simpan";
             this.btnSimpan.UseVisualStyleBackColor = true;
+            this.btnSimpan.Click += new System.EventHandler(this.btnSimpan_Click);
             // 
             // btnBatal
             // 
@@ -183,6 +187,7 @@
             this.btnBatal.TabIndex = 15;
             this.btnBatal.Text = "Batal";
             this.btnBatal.UseVisualStyleBackColor = true;
+            this.btnBatal.Click += new System.EventHandler(this.btnBatal_Click);
             // 
             // btnFilter
             // 
@@ -192,6 +197,7 @@
             this.btnFilter.TabIndex = 16;
             this.btnFilter.Text = "Filter by Peminjam";
             this.btnFilter.UseVisualStyleBackColor = true;
+            this.btnFilter.Click += new System.EventHandler(this.btnFilter_Click);
             // 
             // btnCari
             // 

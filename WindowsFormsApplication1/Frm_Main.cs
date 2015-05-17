@@ -28,6 +28,8 @@ namespace WindowsFormsApplication1
         private void muridToolStripMenuItem_Click(object sender, EventArgs e)
         {
             var FrmBuku = new Frm_MenuBuku();
+            FrmBuku.Show();
+            FrmBuku.MdiParent = this;
         }
     }
 }
