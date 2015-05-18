@@ -35,8 +35,6 @@
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.muridToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.bukuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dataBukuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bukuYangDipinjamToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.peminjamanToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pinjamToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.overdueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -75,7 +73,7 @@
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(92, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.exitToolStripMenuItem.Text = "E&xit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -88,24 +86,10 @@
             // 
             // bukuToolStripMenuItem
             // 
-            this.bukuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.dataBukuToolStripMenuItem,
-            this.bukuYangDipinjamToolStripMenuItem});
             this.bukuToolStripMenuItem.Name = "bukuToolStripMenuItem";
             this.bukuToolStripMenuItem.Size = new System.Drawing.Size(46, 20);
             this.bukuToolStripMenuItem.Text = "&Buku";
-            // 
-            // dataBukuToolStripMenuItem
-            // 
-            this.dataBukuToolStripMenuItem.Name = "dataBukuToolStripMenuItem";
-            this.dataBukuToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.dataBukuToolStripMenuItem.Text = "Data Buku";
-            // 
-            // bukuYangDipinjamToolStripMenuItem
-            // 
-            this.bukuYangDipinjamToolStripMenuItem.Name = "bukuYangDipinjamToolStripMenuItem";
-            this.bukuYangDipinjamToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.bukuYangDipinjamToolStripMenuItem.Text = "Buku yang dipinjam";
+            this.bukuToolStripMenuItem.Click += new System.EventHandler(this.bukuToolStripMenuItem_Click);
             // 
             // peminjamanToolStripMenuItem
             // 
@@ -121,25 +105,25 @@
             // pinjamToolStripMenuItem
             // 
             this.pinjamToolStripMenuItem.Name = "pinjamToolStripMenuItem";
-            this.pinjamToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.pinjamToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.pinjamToolStripMenuItem.Text = "Pinjam";
             // 
             // overdueToolStripMenuItem
             // 
             this.overdueToolStripMenuItem.Name = "overdueToolStripMenuItem";
-            this.overdueToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.overdueToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.overdueToolStripMenuItem.Text = "Overdue";
             // 
             // tagihBukuToolStripMenuItem
             // 
             this.tagihBukuToolStripMenuItem.Name = "tagihBukuToolStripMenuItem";
-            this.tagihBukuToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.tagihBukuToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.tagihBukuToolStripMenuItem.Text = "Tagih Buku";
             // 
             // kembaliToolStripMenuItem
             // 
             this.kembaliToolStripMenuItem.Name = "kembaliToolStripMenuItem";
-            this.kembaliToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.kembaliToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.kembaliToolStripMenuItem.Text = "Kembali";
             // 
             // Frm_Main
@@ -170,8 +154,6 @@
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem muridToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem bukuToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem dataBukuToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem bukuYangDipinjamToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem peminjamanToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pinjamToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem overdueToolStripMenuItem;

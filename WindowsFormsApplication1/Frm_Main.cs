@@ -31,5 +31,12 @@ namespace WindowsFormsApplication1
             FrmBuku.Show();
             FrmBuku.MdiParent = this;
         }
+
+        private void bukuToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var FormBuku = new Frm_MenuBuku();
+            FormBuku.Show();
+            FormBuku.MdiParent = this;
+        }
     }
 }

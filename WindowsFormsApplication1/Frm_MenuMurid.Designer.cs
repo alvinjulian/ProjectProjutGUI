@@ -31,7 +31,7 @@
             this.btnFilter = new System.Windows.Forms.Button();
             this.btnBatal = new System.Windows.Forms.Button();
             this.btnSimpan = new System.Windows.Forms.Button();
-            this.btnTammbahBuku = new System.Windows.Forms.Button();
+            this.btnTambahmurid = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtNama = new System.Windows.Forms.TextBox();
@@ -73,15 +73,17 @@
             this.btnSimpan.TabIndex = 32;
             this.btnSimpan.Text = "Simpan";
             this.btnSimpan.UseVisualStyleBackColor = true;
+            this.btnSimpan.Click += new System.EventHandler(this.btnSimpan_Click);
             // 
-            // btnTammbahBuku
+            // btnTambahmurid
             // 
-            this.btnTammbahBuku.Location = new System.Drawing.Point(375, 41);
-            this.btnTammbahBuku.Name = "btnTammbahBuku";
-            this.btnTammbahBuku.Size = new System.Drawing.Size(75, 46);
-            this.btnTammbahBuku.TabIndex = 31;
-            this.btnTammbahBuku.Text = "Tambah Murid";
-            this.btnTammbahBuku.UseVisualStyleBackColor = true;
+            this.btnTambahmurid.Location = new System.Drawing.Point(375, 41);
+            this.btnTambahmurid.Name = "btnTambahmurid";
+            this.btnTambahmurid.Size = new System.Drawing.Size(75, 46);
+            this.btnTambahmurid.TabIndex = 31;
+            this.btnTambahmurid.Text = "Tambah Murid";
+            this.btnTambahmurid.UseVisualStyleBackColor = true;
+            this.btnTambahmurid.Click += new System.EventHandler(this.btnTammbahBuku_Click);
             // 
             // label7
             // 
@@ -179,6 +181,9 @@
             // cmbKelamin
             // 
             this.cmbKelamin.FormattingEnabled = true;
+            this.cmbKelamin.Items.AddRange(new object[] {
+            "Laki-Laki",
+            "Perempuan"});
             this.cmbKelamin.Location = new System.Drawing.Point(135, 102);
             this.cmbKelamin.Name = "cmbKelamin";
             this.cmbKelamin.Size = new System.Drawing.Size(210, 21);
@@ -194,7 +199,7 @@
             this.Controls.Add(this.btnFilter);
             this.Controls.Add(this.btnBatal);
             this.Controls.Add(this.btnSimpan);
-            this.Controls.Add(this.btnTammbahBuku);
+            this.Controls.Add(this.btnTambahmurid);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtNama);
@@ -219,7 +224,7 @@
         private System.Windows.Forms.Button btnFilter;
         private System.Windows.Forms.Button btnBatal;
         private System.Windows.Forms.Button btnSimpan;
-        private System.Windows.Forms.Button btnTammbahBuku;
+        private System.Windows.Forms.Button btnTambahmurid;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtNama;
